@@ -1,0 +1,73 @@
+@use "../global/variables.scss" as *;
+
+.swiper__wrapper {
+  text-align: center;
+
+  &--slide1 {
+    background-color: $flat-white;
+  }
+
+  &--slide2 {
+    background-color: $lavender-latte;
+  }
+
+  &--slide3 {
+    background-color: $espresso;
+  }
+}
+
+.swiper__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $base-primary;
+}
+
+.swiper__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  color: $base-black;
+}
+
+.swiper__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $base-black;
+}
+
+.swiper__price {
+  font-weight: 600;
+  font-size: 20;
+  line-height: 1.6;
+  color: $base-black;
+
+  &--old {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    color: $base-primary;
+    text-decoration: line-through;
+  }
+}
+
+.swiper__button {
+  padding: 8px 20px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-white;
+  background-color: $base-primary;
+  border: none;
+  border-radius: 4px;
+}
+
+.swiper__pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

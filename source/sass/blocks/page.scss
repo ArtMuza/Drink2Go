@@ -1,0 +1,24 @@
+@use "../global/fonts.scss" as *;
+@use "../global/global.scss" as *;
+@use "../global/variables.scss" as *;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: $base-white;
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+}

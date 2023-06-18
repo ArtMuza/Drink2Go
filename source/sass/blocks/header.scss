@@ -1,0 +1,27 @@
+@use "../global/variables.scss" as *;
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $base-white;
+}
+
+.header__logo {
+padding: 0 20px;
+}
+
+.header__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $base-black;
+  }
+}

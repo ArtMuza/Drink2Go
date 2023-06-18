@@ -1,0 +1,19 @@
+.advantages__subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $base-primary;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__item {
+
+  &--speed {
+    background: url("/img/icons/stack.svg#feature-speed") no-repeat center center / 50px 56px;
+  }
+}
