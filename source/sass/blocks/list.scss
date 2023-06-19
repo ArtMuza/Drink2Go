@@ -1,0 +1,47 @@
+@use "../global/variables.scss" as *;
+
+.list {
+  padding: 16px 20px 40px;
+}
+
+.list__item {
+  padding: 40px 20px 20px;
+}
+
+.list__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+  color: $base-black;
+}
+
+.list__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $base-black;
+}
+
+.list__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+  color: $base-black;
+}
+
+.list__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__button {
+  padding: 8px 20px 8px 46px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $base-white;
+  background: url("/img/icons/stack.svg#cart-button") no-repeat 16px center / 20px 16px;
+  background-color: $base-primary;
+  border: none;
+  border-radius: 4px;
+}

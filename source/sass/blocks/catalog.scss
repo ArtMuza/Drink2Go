@@ -1,0 +1,74 @@
+@use "../global/variables.scss" as *;
+@use "../global/mixin.scss" as *;
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $lightest-grey;
+}
+
+.catalog__subtitle {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $base-primary;
+}
+
+.catalog__title-head {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.catalog__product-sort {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.catalog__pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px 44px;
+  column-gap: 20px;
+}
+
+.catalog__pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: nowrap;
+  // background-color: $base-white;
+  color: $base-primary;
+
+  &--current {
+    font-weight: 600;
+    font-size: 16px;
+    color: $base-black;
+  }
+}
+
+.catalog__pagination-text {
+
+  @media (min-width: $tablet-width) {
+    @include visually-hidden-revert;
+  }
+}
+
+.catalog__pagination-item:first-child {
+  background: $base-white url("/img/icons/stack.svg#arrow-left") no-repeat center center/ 10px 6px;
+}
+
+.catalog__pagination-item:last-child {
+  background: url("/img/icons/stack.svg#arrow-right") no-repeat center center / 10px 6px;
+}

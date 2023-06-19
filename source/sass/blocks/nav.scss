@@ -1,9 +1,11 @@
 @use "../global/fonts.scss" as *;
 @use "../global/variables.scss" as *;
+@use "../global/mixin.scss" as *;
 
 .nav {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .nav__list {
@@ -21,6 +23,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -30,8 +33,7 @@
 
 .nav__link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 21px;
+  padding: 32px 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.33;
@@ -48,6 +50,7 @@
 
 .nav__user-list {
   display: flex;
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -58,21 +61,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
 }
 
 .nav__user-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-black;
   padding: 22px;
-  width: 16px;
-  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px 32px 44px;
+  }
 
   &--account {
     background: url("/img/icons/stack.svg#account") no-repeat center center;
+
+    @media (min-width: $desktop-width) {
+      background-position: -40px center;
+    }
   }
 
   &--basket {
     background: url("/img/icons/stack.svg#basket") no-repeat center center;
+
+    @media (min-width: $desktop-width) {
+      background-position: -40px center;
+    }
+  }
+}
+
+.nav__user-text {
+  @media (min-width: $desktop-width) {
+    @include visually-hidden-revert ;
   }
 }
 

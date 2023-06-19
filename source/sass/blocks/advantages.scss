@@ -1,19 +1,63 @@
-.advantages__subtitle {
+@use "../global/variables.scss" as *;
+
+.advantages {
+  margin: 0 auto;
+  padding: 50px 20px 60px;
   text-align: center;
+}
+
+.advantages__subtitle {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
   color: $base-primary;
 }
 
+.advantages__title-head {
+  margin-bottom: 36px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.78;
+  color: $base-black;
+}
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: $base-black;
+}
+
 .advantages__list {
   display: flex;
   flex-direction: column;
+  row-gap: 32px;
 }
 
 .advantages__item {
+  display: flex;
+  flex-direction: column;
 
   &--speed {
-    background: url("/img/icons/stack.svg#feature-speed") no-repeat center center / 50px 56px;
+    background: url("/img/icons/stack.svg#feature-speed") no-repeat center center;
+  }
+
+  &--fit {
+    background: url("/img/icons/stack.svg#feature-fit") no-repeat center center;
+  }
+
+  &--energy {
+    background: url("/img/icons/stack.svg#feature-energy") no-repeat center center;
+  }
+
+  &--eco {
+    background: url("/img/icons/stack.svg#feature-eco") no-repeat center center;
   }
 }

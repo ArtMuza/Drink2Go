@@ -1,0 +1,71 @@
+@use "../global/variables.scss" as *;
+
+.filter {
+  text-align: start;
+}
+
+.filter__fieldset-legend {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.filter__radio-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.filter__radio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.filter__checkbox-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $base-black;
+}
+
+.filter__button-wrapper {
+  text-align: center;
+}
+
+.filter-button {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-radius: 4px;
+
+  &--apply {
+    padding: 8px 90px;
+    background-color: $base-primary;
+    color: $base-white;
+  }
+
+  &--reset {
+    padding: 8px 100px;
+    background-color: $base-white;
+    color: $base-primary;
+  }
+}
+
+
+.filter__radio-input[type="radio"]:checked +.filter__radio-mark::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $base-primary;
+}

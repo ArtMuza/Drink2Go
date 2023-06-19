@@ -4,14 +4,17 @@
   text-align: center;
 
   &--slide1 {
+    padding: 16px 20px 60px;
     background-color: $flat-white;
   }
 
   &--slide2 {
+    padding: 16px 20px 60px;
     background-color: $lavender-latte;
   }
 
   &--slide3 {
+    padding: 16px 20px 60px;
     background-color: $espresso;
   }
 }
@@ -31,6 +34,7 @@
 }
 
 .swiper__description {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
@@ -49,6 +53,10 @@
     line-height: 2;
     color: $base-primary;
     text-decoration: line-through;
+  }
+
+  &--new {
+    margin-right: 20px;
   }
 }
 

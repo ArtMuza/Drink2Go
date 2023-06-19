@@ -1,0 +1,4 @@
+@mixin visually-hidden-revert {
+  position: static;
+  transform: none;
+}
